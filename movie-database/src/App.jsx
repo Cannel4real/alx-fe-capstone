@@ -13,7 +13,9 @@ function App() {
     <p class="text-lg sm:text-xl font-light mb-6">
       Discover, explore, and save your favorite movies. From classics to the latest blockbusters, we've got it all!
     </p>
-
+    <button class="px-6 py-3 bg-indigo-500 hover:bg-indigo-600 text-white font-semibold rounded shadow-md">
+      Get Started
+    </button>
   </div>
 </div>
 
