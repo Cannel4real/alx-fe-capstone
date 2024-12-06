@@ -1,8 +1,13 @@
-# React + Vite
+# Movie Database
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A movie database web application that allows users to search, filter, and explore movie data using the TMDB API.
 
-Currently, two official plugins are available:
+## Features
+- Search for movies by title, genre, or release year.
+- View detailed information about movies.
+- Add movies to a personal watchlist.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- React
+- Tailwind CSS
+- TMDB API
