@@ -1,8 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+  content: ['./src/**/*.{js,jsx,ts,tsx,cjs,mjs,ts,cts,mts}', './public/index.html'],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        customOrange: '#FF914D', 
+      },
+      backgroundImage: {
+        'custom-bg': "url('/assets/background.png')",
+      },
+    },
   },
   plugins: [],
 }
