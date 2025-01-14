@@ -39,7 +39,7 @@ function SearchBar() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white">
+    <div className="min-h-screen bg-gray-800 text-white">
       
       <div className="container mx-auto px-4">
         {/* Search Bar */}
