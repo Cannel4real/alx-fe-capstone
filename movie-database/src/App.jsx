@@ -1,12 +1,14 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import axios from 'axios';
 import SearchBar from './components/SearchBar';
 import MovieList from './components/MovieList';
 import MovieDetails from './components/MovieDetails';
 import NavBar from './components/NavBar';
+import SignUpPage from './components/SignUpPage';
 import bgPhoto from './assets/background.png';
+import { useNavigate } from 'react-router-dom';
 
 function HomePage() {
   const navigate = useNavigate();
@@ -28,12 +30,20 @@ function HomePage() {
             Explore a world of films, ratings, and reviews at your fingertips. Dive into the
             magic of cinema with CinemaKey.
           </p>
-          <button
-            className="bg-customOrange rounded-md px-5 py-1"
-            onClick={() => navigate('/search')}
-          >
-            Explore
-          </button>
+          <div className="space-x-4">
+            <button
+              className="bg-customOrange rounded-md px-5 py-1"
+              onClick={() => navigate('/search')}
+            >
+              Explore
+            </button>
+            <button
+              className="bg-customOrange rounded-md px-5 py-1 text-white"
+              onClick={() => navigate('/signup')}
+            >
+              Sign Up
+            </button>
+          </div>
         </section>
       </main>
     </div>
@@ -93,7 +103,8 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/search" element={<SearchBar />} />
+        <Route path="/search" element={<SearchPage />} />
+        <Route path="/signup" element={<SignUpPage />} />
       </Routes>
     </Router>
   );
