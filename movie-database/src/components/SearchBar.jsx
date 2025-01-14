@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import MovieList from './MovieList';
 import MovieDetails from './MovieDetails';
-import NavBar from './NavBar';
 
 function SearchBar() {
   const [query, setQuery] = useState('');
